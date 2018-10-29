@@ -1,0 +1,15 @@
+<div class="team_content">
+  <ul class="list-inline text-center">
+    <h3 class="text-center">This template is built with  by</h3>
+    <% data.users.each do |user| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.gh_username}", class: "img-circle avatar" %>
+        <h4> <%= user.name.split(' ').map{|element| element.capitalize}.join(' ') %> </h4>
+        <p>
+          <i class="fab fa-github"></i>
+          <%= user.gh_username %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>

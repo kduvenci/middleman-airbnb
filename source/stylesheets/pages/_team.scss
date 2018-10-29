@@ -1,0 +1,13 @@
+.team_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#F4F4F4;
+  height: calc(100vh - 100px);
+  h3{
+    padding-bottom: 60px;
+  }
+  .users{
+    padding-bottom: 0px;   
+  }
+}
